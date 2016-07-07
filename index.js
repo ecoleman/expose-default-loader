@@ -24,5 +24,5 @@ module.exports.pitch = function(remainingRequest) {
 	this.cacheable && this.cacheable();
 	if(!this.query) throw new Error("query parameter is missing");
 	return accesorString(this.query.substr(1)) + " = " +
-		"require(" + JSON.stringify("-!" + remainingRequest) + ");";
+		"require(" + JSON.stringify("-!" + remainingRequest) + ").default;";
 };

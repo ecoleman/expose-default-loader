@@ -1,5 +1,6 @@
 {
-  "name": "expose-loader",
+  "name": "expose-default-loader",
+  "private": true,
   "version": "0.7.1",
   "author": "Tobias Koppers @sokra",
   "description": "expose loader module for webpack",
